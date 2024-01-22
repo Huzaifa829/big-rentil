@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&family=Plus+Jakarta+Sans&display=swap');
+
+.nav-main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    background-color: #000;
+}
+
+.nav_part_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 95%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);;
+    /* background-color: aqua; */
+}
+
+.nav_part_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 95%;
+    /* background-color: rgb(3, 44, 44); */
+}
+
+.nav_selecter_main {
+    color: white !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: If you want to change the background color or other styles */
+.nav_selecter_main select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.nav_selecter_main .MuiSvgIcon-root {
+    color: white !important;
+}
+
+.nav_part_1_button {
+    display: flex;
+    gap: 10px;
+}
+
+.nav_part_2_leftSide {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav_part_2_text {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.nav_part_2_rightSide{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav_part_2_rightSide_button{
+    color: white;
+    padding: 11px 30px !important;
+    text-transform: none !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+.nav_part_2_leftSide_child{
+    display: flex;
+    gap: 20px;
+}
+@media screen and (max-width: 768px) {
+    .nav_part_2_leftSide_child{
+        display: none;
+    }
+  }
+  @media screen and (max-width: 425px) {
+.nav_part_2_leftSide_logo{
+    width: 130px;
+}
+.nav_part_2_rightSide{
+    gap: 0px;
+}
+.nav_part_1_button{
+    display: none;
+}
+.nav_part_2_rightSide_button{
+    padding: 10px 5px !important;
+}
+  }
